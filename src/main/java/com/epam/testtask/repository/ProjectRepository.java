@@ -1,15 +1,9 @@
 package com.epam.testtask.repository;
 
 import com.epam.testtask.model.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
 
-public interface ProjectRepository {
-    Project save(Project project);
+public interface ProjectRepository extends JpaRepository<Project, Integer> {
 
-    Project get(int id);
-
-    boolean delete(int id);
-
-    List<Project> getAll();
 }
