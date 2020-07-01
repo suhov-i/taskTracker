@@ -11,13 +11,11 @@ public class Task {
     @Column(name = "id")
     private int id;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private User user;
+    @Column(name = "user")
+    private String user;
 
-    @OneToOne
-    @JoinColumn(name = "project_id")
-    private Project project;
+    @Column(name = "project")
+    private String project;
 
     @Column(name = "subject")
     private String Subject;
@@ -35,7 +33,7 @@ public class Task {
     public Task() {
     }
 
-    public Task(User user, Project project, String subject, int priority, String type, String description) {
+    public Task(String user, String project, String subject, int priority, String type, String description) {
         this.user = user;
         this.project = project;
         Subject = subject;
@@ -52,19 +50,19 @@ public class Task {
         this.id = id;
     }
 
-    public User getUser() {
+    public String getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(String user) {
         this.user = user;
     }
 
-    public Project getProject() {
+    public String getProject() {
         return project;
     }
 
-    public void setProject(Project project) {
+    public void setProject(String project) {
         this.project = project;
     }
 

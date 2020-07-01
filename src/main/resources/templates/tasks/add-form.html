@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Tasks</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h3>Tasks page</h3>
+    <hr>
+
+    <p class="h4 mb-4"> Save task </p>
+
+    <form action="#" th:action="@{/tasks/save}"
+                     th:object="${task}" method="post">
+
+        <select class="btn btn-secondary dropdown-toggle mb-4" th:field="*{project}">
+            <option value="NONE" selected disabled>Assign project</option>
+            <option
+                    th:each="project: ${allProjects}"
+                    th:value="${project.id}"
+                    th:text="${project}">
+            </option>
+        </select>
+
+        <select class="btn btn-secondary dropdown-toggle mb-4" th:field="*{user}">
+            <option value="NONE" selected disabled>Assign user</option>
+            <option
+                    th:each="user: ${allUsers}"
+                    th:value="${user.id}"
+                    th:text="${user}">
+            </option>
+        </select>
+
+        <input type="text" th:field="*{subject}"
+               class="form-control mb-4 col-4" placeholder="Subject">
+
+        <input type="text" th:field="*{type}"
+               class="form-control mb-4 col-4" placeholder="Type">
+
+        <input type="text" th:field="*{priority}"
+               class="form-control mb-4 col-4" placeholder="Priority">
+
+        <input type="text" th:field="*{description}"
+               class="form-control mb-4 col-4" placeholder="Description">
+
+        <button type="submit" class="btn btn-info col-2">Save</button>
+    </form>
+
+    <hr>
+    <a th:href="@{/tasks/list}"> Back to Tasks list</a>
+
+</div>
+
+</body>
+</html>

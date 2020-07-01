@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Tasks</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<h3>Tasks page</h3>
+	<hr>
+
+<!--	Button for new task-->
+	<a th:href="@{/tasks/addTaskForm}"
+		class="btn btn-primary btn-sm mb-3">
+		Add new task
+	</a>
+
+	<a th:href="@{/projects/list}"
+	   class="btn btn-primary btn-sm mb-3">
+		Projects
+	</a>
+
+	<a th:href="@{/users/list}"
+	   class="btn btn-primary btn-sm mb-3">
+		Users
+	</a>
+
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Project</th>
+				<th>Subject</th>
+				<th>Type</th>
+				<th>Priority</th>
+				<th>User</th>
+				<th>Description</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+<!--		for each-->
+			<tr th:each="task : ${tasks}">
+			
+				<td th:text="${task.project}"></td>
+				<td th:text="${task.subject}"></td>
+				<td th:text="${task.type}"></td>
+				<td th:text="${task.priority}"></td>
+				<td th:text="${task.user}"></td>
+				<td th:text="${task.description}"></td>
+
+				<td>
+					<a th:href="@{/tasks/delete(taskId=${task.id})}"
+					   class="btn  btn-danger btn-sm"
+					onclick="if (!(confirm('Are you sure you want to delete the task?'))) return false">
+						Delete
+					</a>
+				</td>
+
+			</tr>
+		</tbody>		
+	</table>
+	
+</div>
+	
+</body>
+</html>
+
+
+

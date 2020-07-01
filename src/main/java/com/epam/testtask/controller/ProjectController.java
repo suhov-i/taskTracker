@@ -3,11 +3,14 @@ package com.epam.testtask.controller;
 import com.epam.testtask.model.Project;
 import com.epam.testtask.repository.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("/projects")
 public class ProjectController {
 
@@ -18,32 +21,34 @@ public class ProjectController {
         this.repository = repository;
     }
 
-    @GetMapping("/{projectId}")
-    public Project get(@PathVariable int projectId) {
-        //TODO: null check
-        return repository.get(projectId);
+    @GetMapping("/list")
+    public String getAll(Model model, HttpSession session) {
+        List<Project> projects = repository.getAll();
+        model.addAttribute("projects", projects);
+        session.setAttribute("allProjects", projects);
+        return "projects/projects-list";
     }
 
-    @GetMapping("/")
-    public List<Project> getAll() {
-        return repository.getAll();
+    @GetMapping("/addProjectForm")
+    public String addProjectForm(Model model) {
+        Project project = new Project();
+        model.addAttribute("project", project);
+        return "projects/add-form";
     }
 
-    @PostMapping("/")
-    public Project save(@RequestBody Project project) {
+    @PostMapping("/save")
+    public String save(@ModelAttribute ("project") Project project) {
         //forcing to save new (not update)
         project.setId(0);
-        return repository.save(project);
+        repository.save(project);
+
+        //post-redirect-get
+        return "redirect:/projects/list";
     }
 
-    @PutMapping("/")
-    public Project update(@RequestBody Project project) {
-        return repository.save(project);
-    }
-
-    @DeleteMapping("/{projectId}")
-    public boolean delete(@PathVariable int projectId) {
-        //TODO: false - null
-        return repository.delete(projectId);
+    @GetMapping("/delete")
+    public String delete(@RequestParam("projectId") int projectId) {
+        repository.delete(projectId);
+        return "redirect:/projects/list";
     }
 }

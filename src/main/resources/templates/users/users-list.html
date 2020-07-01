@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Users</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<h3>Users page</h3>
+	<hr>
+
+<!--	Button for new user-->
+	<a th:href="@{/users/addUserForm}"
+		class="btn btn-primary btn-sm mb-3">
+		Add new user
+	</a>
+
+	<a th:href="@{/tasks/list}"
+	   class="btn btn-primary btn-sm mb-3">
+		Tasks
+	</a>
+
+	<a th:href="@{/projects/list}"
+	   class="btn btn-primary btn-sm mb-3">
+		Projects
+	</a>
+
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Name</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+<!--		for each-->
+			<tr th:each="user : ${users}">
+			
+				<td th:text="${user.name}"></td>
+
+				<td>
+					<a th:href="@{/users/delete(userId=${user.id})}"
+					   class="btn  btn-danger btn-sm"
+					onclick="if (!(confirm('Are you sure you want to delete the user?'))) return false">
+						Delete
+					</a>
+				</td>
+
+			</tr>
+		</tbody>		
+	</table>
+	
+</div>
+	
+</body>
+</html>
+
+
+
