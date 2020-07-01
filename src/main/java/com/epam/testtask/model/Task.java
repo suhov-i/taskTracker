@@ -21,7 +21,7 @@ public class Task {
     private String Subject;
 
     @Column(name = "priority")
-    private int priority;
+    private Integer priority;
 
     @Column(name = "type")
     private String type;
@@ -82,11 +82,11 @@ public class Task {
         this.type = type;
     }
 
-    public int getPriority() {
+    public Integer getPriority() {
         return priority;
     }
 
-    public void setPriority(int priority) {
+    public void setPriority(Integer priority) {
         this.priority = priority;
     }
 
