@@ -1,6 +1,5 @@
 package com.epam.testtask.model;
 
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -20,7 +19,6 @@ public class Project {
     @Size(min = 1, message = "minimum of 1 character")
     private String name;
 
-    //required by hibernate
     public Project() {
     }
 

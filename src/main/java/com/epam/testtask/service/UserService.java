@@ -1,7 +1,6 @@
 package com.epam.testtask.service;
 
 import com.epam.testtask.model.User;
-
 import java.util.List;
 
 public interface UserService {
@@ -13,5 +12,4 @@ public interface UserService {
     void save(User user);
 
     boolean deleteById(int id);
-
 }

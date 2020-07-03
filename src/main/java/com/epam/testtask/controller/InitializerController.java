@@ -1,18 +1,15 @@
 package com.epam.testtask.controller;
 
-import com.epam.testtask.repository.ProjectRepository;
-import com.epam.testtask.repository.TaskRepository;
-import com.epam.testtask.repository.UserRepository;
 import com.epam.testtask.service.ProjectService;
 import com.epam.testtask.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import javax.servlet.http.HttpSession;
 
-//to init users and tasks lists
+//to init user and task lists
+
 @Controller
 @RequestMapping("/")
 public class InitializerController {

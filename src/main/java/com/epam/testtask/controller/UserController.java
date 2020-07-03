@@ -9,7 +9,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.util.List;
@@ -25,13 +24,14 @@ public class UserController {
         this.service = service;
     }
 
+    //trims string from form
     @InitBinder
     public void initBinder(WebDataBinder binder) {
-        //trims string from form
         StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
         binder.registerCustomEditor(String.class, stringTrimmerEditor);
     }
 
+    //list all the users
     @GetMapping("/list")
     public String getAll(Model model, HttpSession session) {
         List<User> users = service.findAll();
@@ -40,6 +40,7 @@ public class UserController {
         return "users/users-list";
     }
 
+    //show form for add new user
     @GetMapping("/addUserForm")
     public String addUserForm(Model model) {
         User user = new User();
@@ -47,20 +48,20 @@ public class UserController {
         return "users/add-form";
     }
 
+    //save new user from form
     @PostMapping("/save")
     public String save(@Valid @ModelAttribute ("user") User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "users/add-form";
         }
 
-        //forcing to save new (not update)
-        user.setId(0);
         service.save(user);
 
         //post-redirect-get
         return "redirect:/users/list";
     }
 
+    //delete task by id
     @GetMapping("/delete")
     public String delete(@RequestParam("userId") int userId) {
         //success param is for js popup with alert if not deleted

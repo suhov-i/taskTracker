@@ -45,7 +45,6 @@ public class Task {
     @Size(min = 1, message = "minimum of 1 character")
     private String description;
 
-    //required by hibernate
     public Task() {
     }
 

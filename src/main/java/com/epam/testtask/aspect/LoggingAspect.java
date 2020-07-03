@@ -6,11 +6,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+//logging aspect
+
 @Aspect
 @Component
 public class LoggingAspect {
 
-    private Logger logger = LoggerFactory.getLogger(getClass().getName());
+    private final Logger logger = LoggerFactory.getLogger(getClass().getName());
 
     @Pointcut("execution(* com.epam.testtask.controller.*.*(..))")
     private void forControllerPackage() {
@@ -22,12 +24,7 @@ public class LoggingAspect {
 
     }
 
-    @Pointcut("execution(* com.epam.testtask.formatters.*.*(..))")
-    private void forFormattersPackage() {
-
-    }
-
-    @Pointcut("forControllerPackage() || forServicePackage() || forFormattersPackage()")
+    @Pointcut("forControllerPackage() || forServicePackage()")
     private void forAppFlow() {
 
     }

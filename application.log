@@ -4984,3 +4984,235 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 2020-07-03 17:40:31.635  INFO 12884 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Task{id=1, user=Vasya, project=MTS Site, Subject='database', priority=7, type='implementing', description='description'}, Task{id=2, user=Vladimir, project=Sberbank Online, Subject='front page', priority=2, type='implementing', description='description'}, Task{id=3, user=Elena, project=Sberbank Online, Subject='transactions', priority=8, type='debugging', description='description'}, Task{id=4, user=Victor, project=Video Storage, Subject='ui', priority=5, type='implementing css', description='description'}, Task{id=5, user=Maria, project=Video Storage, Subject='hosting', priority=4, type='debugging', description='description'}, Task{id=6, user=Svetlana, project=Betting App, Subject='architecture', priority=9, type='implementing', description='description'}]
 2020-07-03 17:40:31.635  INFO 12884 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.getAll(..)
 2020-07-03 17:40:31.635  INFO 12884 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/tasks-list
+2020-07-03 18:33:09.908  INFO 12840 --- [main] c.e.t.TaskTrackingSystemApplication      : Starting TaskTrackingSystemApplication on alhabor with PID 12840 (C:\Java\epam test task\testtask\target\classes started by alhabor in C:\Java\epam test task\testtask)
+2020-07-03 18:33:09.911  INFO 12840 --- [main] c.e.t.TaskTrackingSystemApplication      : No active profile set, falling back to default profiles: default
+2020-07-03 18:33:10.619  INFO 12840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-03 18:33:10.718  INFO 12840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 3 JPA repository interfaces.
+2020-07-03 18:33:11.202  INFO 12840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-03 18:33:11.209  INFO 12840 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-03 18:33:11.209  INFO 12840 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-03 18:33:11.296  INFO 12840 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-03 18:33:11.296  INFO 12840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1346 ms
+2020-07-03 18:33:11.432  INFO 12840 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-03 18:33:11.469  INFO 12840 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-03 18:33:11.506  INFO 12840 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-07-03 18:33:11.580  WARN 12840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-03 18:33:11.591  INFO 12840 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-03 18:33:11.665  INFO 12840 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-03 18:33:11.804  INFO 12840 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-03 18:33:11.820  INFO 12840 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-07-03 18:33:11.874  INFO 12840 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2020-07-03 18:33:12.235  INFO 12840 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-03 18:33:12.236  INFO 12840 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-07-03 18:33:12.322  INFO 12840 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-03 18:33:12.329  INFO 12840 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-03 18:33:12.599  INFO 12840 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-07-03 18:33:12.607  INFO 12840 --- [main] c.e.t.TaskTrackingSystemApplication      : Started TaskTrackingSystemApplication in 2.955 seconds (JVM running for 3.535)
+2020-07-03 18:33:12.925  INFO 12840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-03 18:33:12.925  INFO 12840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-03 18:33:12.935  INFO 12840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-07-03 18:33:13.066  WARN 12840 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [110] milliseconds.
+2020-07-03 18:33:13.073  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: InitializerController.initializeLists(..)
+2020-07-03 18:33:13.073  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:13.078  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.findAll()
+2020-07-03 18:33:13.193  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.findAll()
+2020-07-03 18:33:13.194  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Vasya, Vladimir, Elena, Victor, Maria, Svetlana]
+2020-07-03 18:33:13.195  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: ProjectServiceDataJpa.findAll()
+2020-07-03 18:33:13.203  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: ProjectServiceDataJpa.findAll()
+2020-07-03 18:33:13.204  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Sberbank Online, MTS Site, Video Storage, Betting App]
+2020-07-03 18:33:13.204  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: InitializerController.initializeLists(..)
+2020-07-03 18:33:13.204  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> result: redirect:/tasks/list
+2020-07-03 18:33:13.242  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:13.243  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@78ac9286
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@754efe85
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.getAll(..)
+2020-07-03 18:33:13.246  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:13.247  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:13.247  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:13.247  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:13.247  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:13.264  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:13.264  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Task{id=1, user=Vasya, project=MTS Site, Subject='database', priority=7, type='implementing', description='description'}, Task{id=2, user=Vladimir, project=Sberbank Online, Subject='front page', priority=2, type='implementing', description='description'}, Task{id=3, user=Elena, project=Sberbank Online, Subject='transactions', priority=8, type='debugging', description='description'}, Task{id=4, user=Victor, project=Video Storage, Subject='ui', priority=5, type='implementing css', description='description'}, Task{id=5, user=Maria, project=Video Storage, Subject='hosting', priority=4, type='debugging', description='description'}, Task{id=6, user=Svetlana, project=Betting App, Subject='architecture', priority=9, type='implementing', description='description'}]
+2020-07-03 18:33:13.265  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.getAll(..)
+2020-07-03 18:33:13.265  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/tasks-list
+2020-07-03 18:33:18.609  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.addTaskForm(..)
+2020-07-03 18:33:18.610  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:18.610  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:18.610  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.addTaskForm(..)
+2020-07-03 18:33:18.610  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/add-form
+2020-07-03 18:33:18.611  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:18.611  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@b313d0
+2020-07-03 18:33:18.614  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:18.614  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:28.598  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:28.599  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@28e828e4
+2020-07-03 18:33:28.599  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:28.600  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:28.637  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.save(..)
+2020-07-03 18:33:28.638  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: Task{id=0, user=null, project=null, Subject='subj', priority=9, type='type', description='Обед'}
+2020-07-03 18:33:28.638  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.validation.BeanPropertyBindingResult: 0 errors
+2020-07-03 18:33:28.638  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:28.639  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {task=Task{id=0, user=null, project=null, Subject='subj', priority=9, type='type', description='Обед'}, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2020-07-03 18:33:28.639  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.save(..)
+2020-07-03 18:33:28.639  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: Task{id=0, user=null, project=null, Subject='subj', priority=9, type='type', description='Обед'}
+2020-07-03 18:33:28.665  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.save(..)
+2020-07-03 18:33:28.665  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:28.665  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.save(..)
+2020-07-03 18:33:28.665  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> result: redirect:/tasks/list
+2020-07-03 18:33:28.677  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:28.677  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@1fb9693e
+2020-07-03 18:33:28.677  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:28.677  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:28.677  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@117e94b9
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.getAll(..)
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:28.678  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:28.685  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:28.685  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Task{id=1, user=Vasya, project=MTS Site, Subject='database', priority=7, type='implementing', description='description'}, Task{id=2, user=Vladimir, project=Sberbank Online, Subject='front page', priority=2, type='implementing', description='description'}, Task{id=3, user=Elena, project=Sberbank Online, Subject='transactions', priority=8, type='debugging', description='description'}, Task{id=4, user=Victor, project=Video Storage, Subject='ui', priority=5, type='implementing css', description='description'}, Task{id=5, user=Maria, project=Video Storage, Subject='hosting', priority=4, type='debugging', description='description'}, Task{id=6, user=Svetlana, project=Betting App, Subject='architecture', priority=9, type='implementing', description='description'}, Task{id=71, user=Maria, project=Video Storage, Subject='subj', priority=9, type='type', description='Обед'}]
+2020-07-03 18:33:28.685  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.getAll(..)
+2020-07-03 18:33:28.685  INFO 12840 --- [http-nio-8080-exec-6] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/tasks-list
+2020-07-03 18:33:38.786  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:38.787  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@26c2c85f
+2020-07-03 18:33:38.787  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:38.787  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:38.788  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.delete(..)
+2020-07-03 18:33:38.788  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 71
+2020-07-03 18:33:38.788  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.deleteById(..)
+2020-07-03 18:33:38.788  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 71
+2020-07-03 18:33:38.807  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.deleteById(..)
+2020-07-03 18:33:38.808  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:38.808  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.delete(..)
+2020-07-03 18:33:38.808  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> result: redirect:/tasks/list
+2020-07-03 18:33:38.818  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:38.818  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@be82c7a
+2020-07-03 18:33:38.818  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:38.818  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:38.818  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@4eeaa363
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.getAll(..)
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:38.819  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:38.825  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:38.826  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Task{id=1, user=Vasya, project=MTS Site, Subject='database', priority=7, type='implementing', description='description'}, Task{id=2, user=Vladimir, project=Sberbank Online, Subject='front page', priority=2, type='implementing', description='description'}, Task{id=3, user=Elena, project=Sberbank Online, Subject='transactions', priority=8, type='debugging', description='description'}, Task{id=4, user=Victor, project=Video Storage, Subject='ui', priority=5, type='implementing css', description='description'}, Task{id=5, user=Maria, project=Video Storage, Subject='hosting', priority=4, type='debugging', description='description'}, Task{id=6, user=Svetlana, project=Betting App, Subject='architecture', priority=9, type='implementing', description='description'}]
+2020-07-03 18:33:38.826  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.getAll(..)
+2020-07-03 18:33:38.826  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/tasks-list
+2020-07-03 18:33:52.934  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.getAll(..)
+2020-07-03 18:33:52.935  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:52.935  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:52.940  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.findAll()
+2020-07-03 18:33:52.944  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.findAll()
+2020-07-03 18:33:52.944  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Vasya, Vladimir, Elena, Victor, Maria, Svetlana]
+2020-07-03 18:33:52.944  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.getAll(..)
+2020-07-03 18:33:52.944  INFO 12840 --- [http-nio-8080-exec-1] com.epam.testtask.aspect.LoggingAspect   : ===> result: users/users-list
+2020-07-03 18:33:56.387  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.initBinder(..)
+2020-07-03 18:33:56.387  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@63aad9fc
+2020-07-03 18:33:56.388  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.initBinder(..)
+2020-07-03 18:33:56.388  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:56.388  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.delete(..)
+2020-07-03 18:33:56.389  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 5
+2020-07-03 18:33:56.389  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.deleteById(..)
+2020-07-03 18:33:56.389  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 5
+2020-07-03 18:33:56.398  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.deleteById(..)
+2020-07-03 18:33:56.398  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: false
+2020-07-03 18:33:56.398  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.delete(..)
+2020-07-03 18:33:56.398  INFO 12840 --- [http-nio-8080-exec-2] com.epam.testtask.aspect.LoggingAspect   : ===> result: redirect:/users/list?success=false
+2020-07-03 18:33:56.411  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.getAll(..)
+2020-07-03 18:33:56.412  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:56.412  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:56.412  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.findAll()
+2020-07-03 18:33:56.414  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.findAll()
+2020-07-03 18:33:56.414  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Vasya, Vladimir, Elena, Victor, Maria, Svetlana]
+2020-07-03 18:33:56.414  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.getAll(..)
+2020-07-03 18:33:56.414  INFO 12840 --- [http-nio-8080-exec-3] com.epam.testtask.aspect.LoggingAspect   : ===> result: users/users-list
+2020-07-03 18:33:59.184  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:59.185  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@54d1dd42
+2020-07-03 18:33:59.185  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:59.185  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@50ee5300
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.getAll(..)
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:33:59.186  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:59.193  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.findAll()
+2020-07-03 18:33:59.193  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Task{id=1, user=Vasya, project=MTS Site, Subject='database', priority=7, type='implementing', description='description'}, Task{id=2, user=Vladimir, project=Sberbank Online, Subject='front page', priority=2, type='implementing', description='description'}, Task{id=3, user=Elena, project=Sberbank Online, Subject='transactions', priority=8, type='debugging', description='description'}, Task{id=4, user=Victor, project=Video Storage, Subject='ui', priority=5, type='implementing css', description='description'}, Task{id=5, user=Maria, project=Video Storage, Subject='hosting', priority=4, type='debugging', description='description'}, Task{id=6, user=Svetlana, project=Betting App, Subject='architecture', priority=9, type='implementing', description='description'}]
+2020-07-03 18:33:59.193  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.getAll(..)
+2020-07-03 18:33:59.193  INFO 12840 --- [http-nio-8080-exec-4] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/tasks-list
+2020-07-03 18:34:02.915  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:34:02.915  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@67a674b3
+2020-07-03 18:34:02.915  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:34:02.916  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:34:02.916  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.delete(..)
+2020-07-03 18:34:02.916  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 5
+2020-07-03 18:34:02.916  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.deleteById(..)
+2020-07-03 18:34:02.916  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 5
+2020-07-03 18:34:02.919  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.deleteById(..)
+2020-07-03 18:34:02.919  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:34:02.920  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.delete(..)
+2020-07-03 18:34:02.920  INFO 12840 --- [http-nio-8080-exec-5] com.epam.testtask.aspect.LoggingAspect   : ===> result: redirect:/tasks/list
+2020-07-03 18:34:02.932  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@448ee7ff
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.initBinder(..)
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@4a49011e
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.initBinder(..)
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskController.getAll(..)
+2020-07-03 18:34:02.933  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:34:02.934  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:34:02.934  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:34:02.934  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> arg: null
+2020-07-03 18:34:02.934  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: TaskServiceDataJpa.findAll()
+2020-07-03 18:34:02.938  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskServiceDataJpa.findAll()
+2020-07-03 18:34:02.938  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Task{id=1, user=Vasya, project=MTS Site, Subject='database', priority=7, type='implementing', description='description'}, Task{id=2, user=Vladimir, project=Sberbank Online, Subject='front page', priority=2, type='implementing', description='description'}, Task{id=3, user=Elena, project=Sberbank Online, Subject='transactions', priority=8, type='debugging', description='description'}, Task{id=4, user=Victor, project=Video Storage, Subject='ui', priority=5, type='implementing css', description='description'}, Task{id=6, user=Svetlana, project=Betting App, Subject='architecture', priority=9, type='implementing', description='description'}]
+2020-07-03 18:34:02.939  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: TaskController.getAll(..)
+2020-07-03 18:34:02.939  INFO 12840 --- [http-nio-8080-exec-7] com.epam.testtask.aspect.LoggingAspect   : ===> result: tasks/tasks-list
+2020-07-03 18:34:04.252  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.getAll(..)
+2020-07-03 18:34:04.253  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:34:04.253  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:34:04.253  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.findAll()
+2020-07-03 18:34:04.257  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.findAll()
+2020-07-03 18:34:04.257  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Vasya, Vladimir, Elena, Victor, Maria, Svetlana]
+2020-07-03 18:34:04.257  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.getAll(..)
+2020-07-03 18:34:04.257  INFO 12840 --- [http-nio-8080-exec-8] com.epam.testtask.aspect.LoggingAspect   : ===> result: users/users-list
+2020-07-03 18:34:06.096  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.initBinder(..)
+2020-07-03 18:34:06.096  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.springframework.web.servlet.mvc.method.annotation.ExtendedServletRequestDataBinder@2b86022d
+2020-07-03 18:34:06.096  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.initBinder(..)
+2020-07-03 18:34:06.097  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: null
+2020-07-03 18:34:06.097  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.delete(..)
+2020-07-03 18:34:06.097  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 5
+2020-07-03 18:34:06.097  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.deleteById(..)
+2020-07-03 18:34:06.097  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> arg: 5
+2020-07-03 18:34:06.104  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.deleteById(..)
+2020-07-03 18:34:06.104  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: true
+2020-07-03 18:34:06.104  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.delete(..)
+2020-07-03 18:34:06.104  INFO 12840 --- [http-nio-8080-exec-9] com.epam.testtask.aspect.LoggingAspect   : ===> result: redirect:/users/list?success=true
+2020-07-03 18:34:06.116  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserController.getAll(..)
+2020-07-03 18:34:06.116  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> arg: {}
+2020-07-03 18:34:06.117  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> arg: org.apache.catalina.session.StandardSessionFacade@714c3d6e
+2020-07-03 18:34:06.117  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> calling method: UserServiceDataJpa.findAll()
+2020-07-03 18:34:06.118  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserServiceDataJpa.findAll()
+2020-07-03 18:34:06.118  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> result: [Vasya, Vladimir, Elena, Victor, Svetlana]
+2020-07-03 18:34:06.119  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> returning from method: UserController.getAll(..)
+2020-07-03 18:34:06.119  INFO 12840 --- [http-nio-8080-exec-10] com.epam.testtask.aspect.LoggingAspect   : ===> result: users/users-list

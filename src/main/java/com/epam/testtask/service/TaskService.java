@@ -1,7 +1,6 @@
 package com.epam.testtask.service;
 
 import com.epam.testtask.model.Task;
-
 import java.util.List;
 
 public interface TaskService {

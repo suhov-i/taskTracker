@@ -16,9 +16,11 @@ public class UserServiceDataJpa implements UserService {
 
     private UserRepository repository;
 
-    //I know it's bad practice to have multiple repos in one service
-    //(we need to check if user or project is in current task before deleting)
-    //But I thought it's more OK like this than making additional facades and inject them in service
+    /*
+     * I know it's bad practice to have multiple repos in one service
+     * (we need to check if user or project is in current task before deleting)
+     * But I thought it's more OK like this than making additional facades and inject them in service
+     */
     private TaskRepository taskRepository;
 
     @Autowired
@@ -48,10 +50,10 @@ public class UserServiceDataJpa implements UserService {
 
     @Override
     public boolean deleteById(int id) {
-        //shall not delete if user has tasks
         User user = findById(id);
         List<Task> tasks = taskRepository.findAll();
 
+        //shall not delete if user has tasks
         for (Task task : tasks) {
             if (task.getUser().equals(user))
                 return false;

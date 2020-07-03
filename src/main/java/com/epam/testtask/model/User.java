@@ -19,7 +19,6 @@ public class User {
     @Size(min = 1, message = "minimum of 1 character")
     private String name;
 
-    //required by hibernate
     public User() {
     }
 

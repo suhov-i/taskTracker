@@ -1,7 +1,6 @@
 package com.epam.testtask.service;
 
 import com.epam.testtask.model.Project;
-
 import java.util.List;
 
 public interface ProjectService {
@@ -13,5 +12,4 @@ public interface ProjectService {
     void save(Project project);
 
     boolean deleteById(int id);
-
 }

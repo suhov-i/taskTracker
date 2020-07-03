@@ -1,7 +1,5 @@
 package com.epam.testtask;
 
-import com.epam.testtask.formatters.ProjectFormatter;
-import com.epam.testtask.formatters.UserFormatter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
@@ -27,14 +25,4 @@ public class TaskTrackingSystemApplication {
 			e.printStackTrace();
 		}
 	}
-
-//	@Configuration
-//	static class MyConfig implements WebMvcConfigurer {
-//
-//		@Override
-//		public void addFormatters(FormatterRegistry registry) {
-//			registry.addFormatter(new ProjectFormatter());
-//			registry.addFormatter(new UserFormatter());
-//		}
-//	}
 }

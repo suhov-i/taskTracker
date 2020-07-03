@@ -4,9 +4,7 @@ import com.epam.testtask.model.Task;
 import com.epam.testtask.repository.TaskRepository;
 import com.epam.testtask.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
