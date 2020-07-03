@@ -1,21 +1,17 @@
 package com.epam.testtask.service;
 
 import com.epam.testtask.model.User;
-import com.epam.testtask.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
-public class UserService {
+import java.util.List;
 
-    private UserRepository repository;
+public interface UserService {
 
-    @Autowired
-    public void setRepository(UserRepository repository) {
-        this.repository = repository;
-    }
+    List<User> findAll();
 
-    public User get(int id) {
-        return repository.get(id);
-    }
+    User findById(int id);
+
+    void save(User user);
+
+    boolean deleteById(int id);
+
 }

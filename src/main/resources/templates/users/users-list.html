@@ -14,26 +14,38 @@
 
 <body>
 
+<!--js for popup if repo couldn't delete a user-->
+<script th:inline="javascript">
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const success = urlParams.get('success')
+	if (success == "false")
+		confirm('Can\'t delete a user that is being used in current task.')
+</script>
+
 <div class="container">
 
 	<h3>Users page</h3>
 	<hr>
 
-<!--	Button for new user-->
-	<a th:href="@{/users/addUserForm}"
-		class="btn btn-primary btn-sm mb-3">
-		Add new user
-	</a>
+	<div>
+		<a th:href="@{/users/addUserForm}"
+			class="btn btn-primary btn-sm mb-3">
+			Add new user
+		</a>
 
-	<a th:href="@{/tasks/list}"
-	   class="btn btn-primary btn-sm mb-3">
-		Tasks
-	</a>
+		<div class="float-right">
+			<a th:href="@{/tasks/list}"
+			   class="btn btn-primary btn-sm mb-3">
+				Tasks
+			</a>
 
-	<a th:href="@{/projects/list}"
-	   class="btn btn-primary btn-sm mb-3">
-		Projects
-	</a>
+			<a th:href="@{/projects/list}"
+			   class="btn btn-primary btn-sm mb-3">
+				Projects
+			</a>
+		</div>
+	</div>
 
 	<table class="table table-bordered table-striped">
 		<thead class="thead-dark">

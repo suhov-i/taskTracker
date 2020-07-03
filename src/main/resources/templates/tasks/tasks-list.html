@@ -19,21 +19,24 @@
 	<h3>Tasks page</h3>
 	<hr>
 
-<!--	Button for new task-->
-	<a th:href="@{/tasks/addTaskForm}"
-		class="btn btn-primary btn-sm mb-3">
-		Add new task
-	</a>
+	<div>
+		<a th:href="@{/tasks/addTaskForm}"
+			class="btn btn-primary btn-sm mb-3">
+			Add new task
+		</a>
 
-	<a th:href="@{/projects/list}"
-	   class="btn btn-primary btn-sm mb-3">
-		Projects
-	</a>
+		<div class="float-right">
+			<a th:href="@{/projects/list}"
+			   class="btn btn-primary btn-sm mb-3">
+				Projects
+			</a>
 
-	<a th:href="@{/users/list}"
-	   class="btn btn-primary btn-sm mb-3">
-		Users
-	</a>
+			<a th:href="@{/users/list}"
+			   class="btn btn-primary btn-sm mb-3">
+				Users
+			</a>
+		</div>
+	</div>
 
 	<table class="table table-bordered table-striped">
 		<thead class="thead-dark">
@@ -70,7 +73,38 @@
 			</tr>
 		</tbody>		
 	</table>
-	
+
+
+	<form action="#" th:action="@{/tasks/list}" method="get">
+		<!--	Filter by project-->
+		<div class="field">
+			<select class="btn btn-secondary dropdown-toggle mb-4" name="projectId">
+				<option value="0" selected disabled>Filter by project</option>
+				<option
+						th:each="project: ${allProjects}"
+						th:value="${project.id}"
+						th:text="${project.name}">
+				</option>
+			</select>
+			<button type="submit" class="btn btn-primary mb-4">Filter</button>
+			<div class="float-right">
+				<button type="submit" class="btn btn-primary mb-4">Reset filter</button>
+			</div>
+		</div>
+	</form>
+
+	<form action="#" th:action="@{/tasks/list}" method="get" name="userId">
+		<!--	Filter by user-->
+		<select class="btn btn-secondary dropdown-toggle mb-4">
+			<option value="0" selected disabled>Filter by user</option>
+			<option
+					th:each="user: ${allUsers}"
+					th:value="${user.id}"
+					th:text="${user.name}">
+			</option>
+		</select>
+		<button type="submit" class="btn btn-primary mb-4">Filter</button>
+	</form>
 </div>
 	
 </body>

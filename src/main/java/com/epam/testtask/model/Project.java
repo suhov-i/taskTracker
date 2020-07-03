@@ -2,6 +2,8 @@ package com.epam.testtask.model;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Entity
@@ -14,6 +16,8 @@ public class Project { //TODO: notnull annotations in entities
     private int id;
 
     @Column(name = "name")
+    @NotNull(message = "required")
+    @Size(min = 1, message = "minimum of 1 character")
     private String name;
 
     //required by hibernate

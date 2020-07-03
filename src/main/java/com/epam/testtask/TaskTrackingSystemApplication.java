@@ -1,5 +1,7 @@
 package com.epam.testtask;
 
+import com.epam.testtask.formatters.ProjectFormatter;
+import com.epam.testtask.formatters.UserFormatter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;

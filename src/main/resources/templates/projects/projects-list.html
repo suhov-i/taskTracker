@@ -14,26 +14,38 @@
 
 <body>
 
+<!--js for popup if repo couldn't delete a project-->
+<script th:inline="javascript">
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const success = urlParams.get('success')
+	if (success == "false")
+		confirm('Can\'t delete a project that is being used in current task.')
+</script>
+
 <div class="container">
 
 	<h3>Projects page</h3>
 	<hr>
 
-<!--	Button for new project-->
-	<a th:href="@{/projects/addProjectForm}"
-		class="btn btn-primary btn-sm mb-3">
-		Add new project
-	</a>
+	<div>
+		<a th:href="@{/projects/addProjectForm}"
+			class="btn btn-primary btn-sm mb-3">
+			Add new project
+		</a>
 
-	<a th:href="@{/tasks/list}"
-	   class="btn btn-primary btn-sm mb-3">
-		Tasks
-	</a>
+		<div class="float-right">
+			<a th:href="@{/tasks/list}"
+			   class="btn btn-primary btn-sm mb-3">
+				Tasks
+			</a>
 
-	<a th:href="@{/users/list}"
-	   class="btn btn-primary btn-sm mb-3">
-		Users
-	</a>
+			<a th:href="@{/users/list}"
+			   class="btn btn-primary btn-sm mb-3">
+				Users
+			</a>
+		</div>
+	</div>
 
 	<table class="table table-bordered table-striped">
 		<thead class="thead-dark">
