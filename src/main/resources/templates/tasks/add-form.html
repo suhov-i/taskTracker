@@ -59,8 +59,8 @@
         </div>
 
         <div class="form-inline">
-            <input type="text" th:field="*{priority}"
-                   class="form-control mb-4 col-4" placeholder="Priority">
+            <input type="number" th:field="*{priority}"
+                   class="form-control mb-4 col-4" placeholder="Priority (1-10)">
                 <i th:if="${#fields.hasErrors('priority')}" th:errors="*{priority}" class="error"></i>
         </div>
 
