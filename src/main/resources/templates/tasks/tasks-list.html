@@ -93,9 +93,9 @@
 		</div>
 	</form>
 
-	<form action="#" th:action="@{/tasks/list}" method="get" name="userId">
+	<form action="#" th:action="@{/tasks/list}" method="get">
 		<!--	Filter by user-->
-		<select class="btn btn-secondary dropdown-toggle mb-4">
+		<select class="btn btn-secondary dropdown-toggle mb-4" name="userId">
 			<option value="0" selected disabled>Filter by user</option>
 			<option
 					th:each="user: ${allUsers}"
