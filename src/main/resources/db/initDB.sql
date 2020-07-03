@@ -20,7 +20,7 @@ CREATE TABLE tasks
     id          INTEGER PRIMARY KEY AUTO_INCREMENT,
     user_id     INTEGER   NOT NULL,
     project_id  INTEGER   NOT NULL,
-    subject     VARCHAR   NOT NULL,
+    subject     TEXT      NOT NULL,
     priority    INTEGER   NOT NULL,
     type        TEXT      NOT NULL,
     description TEXT      NOT NULL,
