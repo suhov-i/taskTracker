@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "projects")
-public class Project { //TODO: notnull annotations in entities
+public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
