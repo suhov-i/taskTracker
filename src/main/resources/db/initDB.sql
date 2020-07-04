@@ -8,7 +8,6 @@ CREATE TABLE users
     name        VARCHAR NOT NULL
 );
 
-
 CREATE TABLE projects
 (
     id          INTEGER PRIMARY KEY AUTO_INCREMENT,

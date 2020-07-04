@@ -35,8 +35,9 @@ public class LoggingAspect {
         Object[] args = joinPoint.getArgs();
 
         logger.info("===> calling method: " + method);
-        for (Object obj : args)
+        for (Object obj : args) {
             logger.info("===> arg: " + obj);
+        }
     }
 
     @AfterReturning(pointcut = "forAppFlow()", returning = "result")
