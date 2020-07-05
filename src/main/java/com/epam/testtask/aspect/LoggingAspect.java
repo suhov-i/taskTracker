@@ -53,6 +53,6 @@ public class LoggingAspect {
         String method = joinPoint.getSignature().toShortString();
 
         logger.error("===> exception in method: " + method);
-        logger.error("===> Exception: " + exc);
+        logger.error("===> exception: " + exc);
     }
 }

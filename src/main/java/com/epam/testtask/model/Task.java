@@ -29,7 +29,6 @@ public class Task {
     private String subject;
 
     @Column(name = "priority")
-    @Digits(message = "number from 1 to 10", integer = 2, fraction = 0)
     @Min(value = 1, message = "must be greater than or equal to 1")
     @Max(value = 10, message = "must be less than or equal to 10")
     @NotNull(message = "required")
